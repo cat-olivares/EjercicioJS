@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/estilos2.css">
+    <script src="js/func.js"></script>
+    <title>Formulario de postulación</title>
+</head>
+<body>
+    
+    <div class="container mt-4 mb-4 fondo">
+        <h2>Formulario de postulación</h2>
+        <form action="" method="post" name="postulacion">
+            <div class="form-group">
+                <label for="rut">Rut: </label>
+                <input type="text" id="rut" name="rut" class="form-control" minlength="9" maxlength="10" required>
+            </div>
+            <div class="form-group">
+                <label for="nombre">Nombre: </label>
+                <input type="text" id="nombre" name="nombre" class="form-control" minlength="3" maxlength="20" required>
+            </div>
+            <div class="form-group">
+                <label for="paterno">Apellido paterno: </label>
+                <input type="text" id="paterno" name="paterno" class="form-control" minlength="3" maxlength="20" required>
+            </div>
+            <div class="form-group">
+                <label for="materno">Apellido materno: </label>
+                <input type="text" id="materno" name="materno" class="form-control" minlength="3" maxlength="20" required>
+            </div>
+            <div class="form-group">
+                <label for="nacimiento">Fecha de nacimiento: </label>
+                <input type="date" id="nacimiento" name="nacimiento" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+                <label for="edad">Edad: </label>
+                <input type="number" id="edad" name="edad" class="form-control" min="18" max="35" required>
+            </div>
+
+            <div class="form-group">
+                <label for="genero">Género: </label> 
+                 <select id="genero" class="form-control">
+                     <option value="e">Seleccione su género..</option>
+                     <option value="f">Femenino</option>
+                     <option value="m">Masculino</option>
+                     <option value="o">Otro</option>
+                 </select>
+             </div>
+
+             <div class="form-group">
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="cachupin@duoc.cl" required>
+            </div>
+            <div class="form-group">
+                <label for="celular">Celular: </label>
+                <input type="text" id="celular" name="celular" class="form-control" minlength="9" maxlength="12" required>
+            </div>
+            <div class="form-group">
+                <label for="profesion">Profesión: </label>
+                <input type="text" id="profesion" name="profesion" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+                <label for="motivo" >Motivo: </label> 
+                 <select id="motivo" class="form-control">
+                     <option value="m0">Seleccione su motivo..</option>
+                     <option value="m1">motivo 1</option>
+                     <option value="m2">motivo 2</option>
+                     <option value="m3">Otro</option>
+                 </select>
+             </div>
+
+            <div class="div-sub">
+                <button type="button" class="btn sub" onclick="crearCarta()">Enviar</button>
+            </div> 
+        </form>
+
+        <div class="form-group">
+            <label for="carta">Carta: </label> 
+            <textarea class="form-control" rows="11" id="carta" name="carta"></textarea>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
